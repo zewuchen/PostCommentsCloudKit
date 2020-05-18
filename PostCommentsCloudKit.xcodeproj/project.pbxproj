@@ -7,23 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB1A9DF42472EAC300946B78 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1A9DF32472EAC300946B78 /* PostModel.swift */; };
 		CBF53C48246F1D360009A597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF53C47246F1D360009A597 /* AppDelegate.swift */; };
 		CBF53C4A246F1D360009A597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF53C49246F1D360009A597 /* SceneDelegate.swift */; };
-		CBF53C4C246F1D360009A597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF53C4B246F1D360009A597 /* ViewController.swift */; };
 		CBF53C4F246F1D360009A597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF53C4D246F1D360009A597 /* Main.storyboard */; };
 		CBF53C51246F1D390009A597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF53C50246F1D390009A597 /* Assets.xcassets */; };
 		CBF53C54246F1D390009A597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF53C52246F1D390009A597 /* LaunchScreen.storyboard */; };
+		CBF53C63246F25070009A597 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF53C62246F25070009A597 /* CloudKit.framework */; };
+		CBF53C67246F27B30009A597 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF53C66246F27B30009A597 /* Cloud.swift */; };
+		CBF53C6A246F28D70009A597 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF53C69246F28D70009A597 /* PostListViewController.swift */; };
+		CBF53C6D246F293B0009A597 /* PostListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF53C6C246F293B0009A597 /* PostListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB1A9DF32472EAC300946B78 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		CBF53C44246F1D360009A597 /* PostCommentsCloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostCommentsCloudKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF53C47246F1D360009A597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF53C49246F1D360009A597 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBF53C4B246F1D360009A597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBF53C4E246F1D360009A597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBF53C50246F1D390009A597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF53C53246F1D390009A597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBF53C55246F1D390009A597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF53C60246F25020009A597 /* PostCommentsCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PostCommentsCloudKit.entitlements; sourceTree = "<group>"; };
+		CBF53C62246F25070009A597 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		CBF53C66246F27B30009A597 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		CBF53C69246F28D70009A597 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		CBF53C6C246F293B0009A597 /* PostListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF53C63246F25070009A597 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 			children = (
 				CBF53C46246F1D360009A597 /* PostCommentsCloudKit */,
 				CBF53C45246F1D360009A597 /* Products */,
+				CBF53C61246F25070009A597 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +67,11 @@
 		CBF53C46246F1D360009A597 /* PostCommentsCloudKit */ = {
 			isa = PBXGroup;
 			children = (
+				CBF53C60246F25020009A597 /* PostCommentsCloudKit.entitlements */,
 				CBF53C5C246F1DCC0009A597 /* Application */,
 				CBF53C5F246F24AD0009A597 /* Data */,
 				CBF53C5D246F1E1E0009A597 /* Screen - Post */,
 				CBF53C5E246F1E3E0009A597 /* Screen - Comments */,
-				CBF53C4B246F1D360009A597 /* ViewController.swift */,
 				CBF53C52246F1D390009A597 /* LaunchScreen.storyboard */,
 				CBF53C4D246F1D360009A597 /* Main.storyboard */,
 				CBF53C50246F1D390009A597 /* Assets.xcassets */,
@@ -81,6 +92,8 @@
 		CBF53C5D246F1E1E0009A597 /* Screen - Post */ = {
 			isa = PBXGroup;
 			children = (
+				CBF53C68246F28C50009A597 /* View */,
+				CBF53C6B246F28DD0009A597 /* Controller */,
 			);
 			path = "Screen - Post";
 			sourceTree = "<group>";
@@ -95,8 +108,34 @@
 		CBF53C5F246F24AD0009A597 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CBF53C66246F27B30009A597 /* Cloud.swift */,
+				CB1A9DF32472EAC300946B78 /* PostModel.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		CBF53C61246F25070009A597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBF53C62246F25070009A597 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBF53C68246F28C50009A597 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBF53C69246F28D70009A597 /* PostListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBF53C6B246F28DD0009A597 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBF53C6C246F293B0009A597 /* PostListController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBF53C4C246F1D360009A597 /* ViewController.swift in Sources */,
+				CBF53C6A246F28D70009A597 /* PostListViewController.swift in Sources */,
+				CB1A9DF42472EAC300946B78 /* PostModel.swift in Sources */,
 				CBF53C48246F1D360009A597 /* AppDelegate.swift in Sources */,
+				CBF53C67246F27B30009A597 /* Cloud.swift in Sources */,
 				CBF53C4A246F1D360009A597 /* SceneDelegate.swift in Sources */,
+				CBF53C6D246F293B0009A597 /* PostListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PostCommentsCloudKit/PostCommentsCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DB2793VW42;
 				INFOPLIST_FILE = PostCommentsCloudKit/Info.plist;
@@ -345,7 +388,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.PostCommentsCloudKit;
+				PRODUCT_BUNDLE_IDENTIFIER = ZewuTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -356,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PostCommentsCloudKit/PostCommentsCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DB2793VW42;
 				INFOPLIST_FILE = PostCommentsCloudKit/Info.plist;
@@ -363,7 +407,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.PostCommentsCloudKit;
+				PRODUCT_BUNDLE_IDENTIFIER = ZewuTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
